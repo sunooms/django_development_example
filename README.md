@@ -8,20 +8,6 @@
 前端采用vue.js
 前后端分离的开发模式
 
-
-## 教程说明
-
-### 1. 介绍django的开发使用
-#### first_django
-    此用例初步介绍如何采用pycharm开发第一个django实例，有完整的mtv hello world示例
-#### django_mysql
-    介绍jdango如何使用mysql的第一个示例
-
-### 2. 介绍django的权限开发
-### 3. 介绍django的rest模式
-### 4. 介绍vue.js的开发使用
-### 5. 结合django、rest、vue完整串联起来开发
-
 ## 使用说明
 软件准备
 1. centos 7
@@ -41,6 +27,20 @@
 5. python2.7.x
     
  
+## 教程说明
+
+### 1. 介绍django的开发使用
+#### first_django
+    此用例初步介绍如何采用pycharm开发第一个django实例，有完整的mtv hello world示例
+#### django_mysql
+    介绍jdango如何使用mysql的第一个示例
+
+### 2. 介绍django的权限开发
+### 3. 介绍django的rest模式
+### 4. 介绍vue.js的开发使用
+### 5. 结合django、rest、vue完整串联起来开发
+
+
 
 ## 参与贡献
 
