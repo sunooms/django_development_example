@@ -1,131 +1,131 @@
-# Ê¹ÓÃpycharmºÍdjango½øĞĞ¿ª·¢ÊµÀı
+# ä½¿ç”¨pycharmå’Œdjangoè¿›è¡Œå¼€å‘å®ä¾‹
 
 [toc]
-## mysqlÔÚwindowsÏÂµÄ°²×°
-### mysqlµÄÏÂÔØ
+## mysqlåœ¨windowsä¸‹çš„å®‰è£…
+### mysqlçš„ä¸‹è½½
     https://dev.mysql.com/downloads/mysql/
-    Ö±½ÓÑ¡Ôñ²»Òª×¢²á£¬Ö±½ÓÏÂÔØ£¨No thanks, just start my download.£©
+    ç›´æ¥é€‰æ‹©ä¸è¦æ³¨å†Œï¼Œç›´æ¥ä¸‹è½½ï¼ˆNo thanks, just start my download.ï¼‰
 
-### ÅäÖÃmy.ini
-    ×¢£º ÕâÀï¼ÙÉèmysql°²×°Â·¾¶ÔÚ£ºE:\xgm\software\mysql-8.0.12-winx64Ä¿Â¼
-    ÔÚE:\xgm\software\mysql-8.0.12-winx64Ä¿Â¼Ôö¼Ómy.iniÅäÖÃÎÄ¼ş
-    ÔÚE:\xgm\software\mysql-8.0.12-winx64Ä¿Â¼ĞÂ½¨dataÄ¿Â¼£¬ÕâÀï´æ·ÅmysqlÊı¾İ
+### é…ç½®my.ini
+    æ³¨ï¼š è¿™é‡Œå‡è®¾mysqlå®‰è£…è·¯å¾„åœ¨ï¼šE:\xgm\software\mysql-8.0.12-winx64ç›®å½•
+    åœ¨E:\xgm\software\mysql-8.0.12-winx64ç›®å½•å¢åŠ my.inié…ç½®æ–‡ä»¶
+    åœ¨E:\xgm\software\mysql-8.0.12-winx64ç›®å½•æ–°å»ºdataç›®å½•ï¼Œè¿™é‡Œå­˜æ”¾mysqlæ•°æ®
 
-    ×¢£º my.iniÅäÖÃÎÄ¼şÀï£¬Â·¾¶ÓÃ2¸ö·´Ğ±¸Ü"\\"
+    æ³¨ï¼š my.inié…ç½®æ–‡ä»¶é‡Œï¼Œè·¯å¾„ç”¨2ä¸ªåæ–œæ "\\"
 
 ```
 [client]
-# ÉèÖÃmysql¿Í»§¶ËÁ¬½Ó·şÎñ¶ËÊ±Ä¬ÈÏÊ¹ÓÃµÄ¶Ë¿Ú
+# è®¾ç½®mysqlå®¢æˆ·ç«¯è¿æ¥æœåŠ¡ç«¯æ—¶é»˜è®¤ä½¿ç”¨çš„ç«¯å£
 port=3306
 default-character-set=utf8
 
 [mysqld]
 lower_case_table_names=1
-# ´´½¨ĞÂ±íÊ±½«Ê¹ÓÃµÄÄ¬ÈÏ´æ´¢ÒıÇæ
+# åˆ›å»ºæ–°è¡¨æ—¶å°†ä½¿ç”¨çš„é»˜è®¤å­˜å‚¨å¼•æ“
 default-storage-engine=INNODB
-# ·şÎñ¶ËÊ¹ÓÃµÄ×Ö·û¼¯Ä¬ÈÏÎªUTF8
+# æœåŠ¡ç«¯ä½¿ç”¨çš„å­—ç¬¦é›†é»˜è®¤ä¸ºUTF8
 character-set-server=utf8
-# ÉèÖÃmysqlµÄ°²×°Ä¿Â¼
-# ÇĞ¼Ç´Ë´¦Ò»¶¨ÒªÓÃË«Ğ±¸Ü\\£¬µ¥Ğ±¸ÜÕâÀï»á³ö´í£¬²»¹ı¿´±ğÈËµÄ½Ì³Ì£¬ÓĞµÄÊÇµ¥Ğ±¸Ü¡£×Ô¼º³¢ÊÔ
+# è®¾ç½®mysqlçš„å®‰è£…ç›®å½•
+# åˆ‡è®°æ­¤å¤„ä¸€å®šè¦ç”¨åŒæ–œæ \\ï¼Œå•æ–œæ è¿™é‡Œä¼šå‡ºé”™ï¼Œä¸è¿‡çœ‹åˆ«äººçš„æ•™ç¨‹ï¼Œæœ‰çš„æ˜¯å•æ–œæ ã€‚è‡ªå·±å°è¯•
 basedir=E:\\xgm\\software\\mysql-8.0.12-winx64
-# ÉèÖÃmysqlÊı¾İ¿âµÄÊı¾İµÄ´æ·ÅÄ¿Â¼
-# ÇĞ¼Ç´Ë´¦Ò»¶¨ÒªÓÃË«Ğ±¸Ü\\£¬µ¥Ğ±¸ÜÕâÀï»á³ö´í£¬²»¹ı¿´±ğÈËµÄ½Ì³Ì£¬ÓĞµÄÊÇµ¥Ğ±¸Ü¡£×Ô¼º³¢ÊÔ
+# è®¾ç½®mysqlæ•°æ®åº“çš„æ•°æ®çš„å­˜æ”¾ç›®å½•
+# åˆ‡è®°æ­¤å¤„ä¸€å®šè¦ç”¨åŒæ–œæ \\ï¼Œå•æ–œæ è¿™é‡Œä¼šå‡ºé”™ï¼Œä¸è¿‡çœ‹åˆ«äººçš„æ•™ç¨‹ï¼Œæœ‰çš„æ˜¯å•æ–œæ ã€‚è‡ªå·±å°è¯•
 datadir=E:\\xgm\\software\\mysql-8.0.12-winx64\\data
-# ÉèÖÃ3306¶Ë¿Ú
+# è®¾ç½®3306ç«¯å£
 port=3306
 sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES 
-# Ä¬ÈÏÊ¹ÓÃ¡°mysql_native_password¡±²å¼şÈÏÖ¤
+# é»˜è®¤ä½¿ç”¨â€œmysql_native_passwordâ€æ’ä»¶è®¤è¯
 default_authentication_plugin=mysql_native_password
-# ÔÊĞí×î´óÁ¬½ÓÊı
+# å…è®¸æœ€å¤§è¿æ¥æ•°
 max_connections=200
-# ÔÊĞíÁ¬½ÓÊ§°ÜµÄ´ÎÊı¡£ÕâÊÇÎªÁË·ÀÖ¹ÓĞÈË´Ó¸ÃÖ÷»úÊÔÍ¼¹¥»÷Êı¾İ¿âÏµÍ³
+# å…è®¸è¿æ¥å¤±è´¥çš„æ¬¡æ•°ã€‚è¿™æ˜¯ä¸ºäº†é˜²æ­¢æœ‰äººä»è¯¥ä¸»æœºè¯•å›¾æ”»å‡»æ•°æ®åº“ç³»ç»Ÿ
 max_connect_errors=10
 
 [mysql]
-# ÉèÖÃmysql¿Í»§¶ËÄ¬ÈÏ×Ö·û¼¯
+# è®¾ç½®mysqlå®¢æˆ·ç«¯é»˜è®¤å­—ç¬¦é›†
 default-character-set=utf8
 ```
 
-### ÅäÖÃÏµÍ³±äÁ¿ÒÔ¼°path
-    Ôö¼ÓÏµÍ³±äÁ¿£º MYSQL_HOME = E:\xgm\software\mysql-8.0.12-winx64
-    PATHÖĞÌí¼Ó%MYSQL_HOME%\binÂ·¾¶
+### é…ç½®ç³»ç»Ÿå˜é‡ä»¥åŠpath
+    å¢åŠ ç³»ç»Ÿå˜é‡ï¼š MYSQL_HOME = E:\xgm\software\mysql-8.0.12-winx64
+    PATHä¸­æ·»åŠ %MYSQL_HOME%\binè·¯å¾„
 
-###  ÒÔ¹ÜÀíÔ±Éí·İ´ò¿ªcmd´°¿Ú
-#### ³õÊ¼»¯
-  Ò»¶¨Òª½øĞĞ³õÊ¼»¯£¬ºÜ¶àÈË²»½øĞĞ³õÊ¼»¯£¬¾Í³öÏÖÁË1067´íÎó
-  ³õÊ¼»¯Íê³ÉÖ®ºó£¬»áÉú³ÉÒ»¸öÁÙÊ±ÃÜÂëÕâÀïĞèÒª×¢Òâ°ÑÁÙÊ±ÃÜÂë¼Ç×¡
+###  ä»¥ç®¡ç†å‘˜èº«ä»½æ‰“å¼€cmdçª—å£
+#### åˆå§‹åŒ–
+  ä¸€å®šè¦è¿›è¡Œåˆå§‹åŒ–ï¼Œå¾ˆå¤šäººä¸è¿›è¡Œåˆå§‹åŒ–ï¼Œå°±å‡ºç°äº†1067é”™è¯¯
+  åˆå§‹åŒ–å®Œæˆä¹‹åï¼Œä¼šç”Ÿæˆä¸€ä¸ªä¸´æ—¶å¯†ç è¿™é‡Œéœ€è¦æ³¨æ„æŠŠä¸´æ—¶å¯†ç è®°ä½
 ```
 1  mysqld --initialize --user=mysql --console
-    »áÉú³É³õÊ¼Ä¬ÈÏÃÜÂë£ºcqt>;fuqu2lP
-    ÒªÊÇÄãÊÖ¼ú£¬¹Ø¿ìÁË£¬»òÕßÃ»¼Ç×¡£¬ÄÇÒ²Ã»ÊÂ£¬É¾µô³õÊ¼»¯µÄ datadir Ä¿Â¼£¬ÔÙÖ´ĞĞÒ»±é³õÊ¼»¯ÃüÁî£¬ÓÖ»áÖØĞÂÉú³ÉµÄ¡£µ±È»£¬Ò²¿ÉÒÔÊ¹ÓÃ°²È«¹¤¾ß£¬Ç¿ÖÆ¸ÄÃÜÂë£¬ÓÃÊ²Ã´·½·¨£¬ËæÒâ
-2 °²×°·şÎñ£º
+    ä¼šç”Ÿæˆåˆå§‹é»˜è®¤å¯†ç ï¼šcqt>;fuqu2lP
+    è¦æ˜¯ä½ æ‰‹è´±ï¼Œå…³å¿«äº†ï¼Œæˆ–è€…æ²¡è®°ä½ï¼Œé‚£ä¹Ÿæ²¡äº‹ï¼Œåˆ æ‰åˆå§‹åŒ–çš„ datadir ç›®å½•ï¼Œå†æ‰§è¡Œä¸€éåˆå§‹åŒ–å‘½ä»¤ï¼Œåˆä¼šé‡æ–°ç”Ÿæˆçš„ã€‚å½“ç„¶ï¼Œä¹Ÿå¯ä»¥ä½¿ç”¨å®‰å…¨å·¥å…·ï¼Œå¼ºåˆ¶æ”¹å¯†ç ï¼Œç”¨ä»€ä¹ˆæ–¹æ³•ï¼Œéšæ„
+2 å®‰è£…æœåŠ¡ï¼š
     mysqld -install MYSQL8.0.12
-3 Æô¶¯·şÎñ£º
+3 å¯åŠ¨æœåŠ¡ï¼š
     net start MYSQL8.0.12
-4 µÇÂ¼Êı¾İ¿â£¬ĞèÒªÃÜÂë
+4 ç™»å½•æ•°æ®åº“ï¼Œéœ€è¦å¯†ç 
     mysql -uroot -p   
-5 ĞŞ¸ÄÊı¾İ¿âÃÜÂë
+5 ä¿®æ”¹æ•°æ®åº“å¯†ç 
     alter user root@localhost identified by '123456'
     flush privileges;
 
-    ±¸×¢£º8.0Ö®Ç°°æ±¾£¬Íü¼ÇÃÜÂëĞŞ¸Ä·½·¨
-        ÕÒµ½binÄ¿Â¼£ºmysqld --skip-grant-tables
-        ÖØĞÂÔÚ¿ªÒ»¸öcmd´°¿Ú
-        ÕÒµ½binÄ¿Â¼£ºmysql¾Í½øÈëµÇÂ½×´Ì¬ÁË
-        5.7.22ĞŞ¸ÄÃÜÂëÓï¾ä£ºupdate user set authentication_string=password('123456') where user='root' and host='localhost';
-        5.6.ĞŞ¸ÄÃÜÂëÓï¾ä£ºupdate user set password=password('123456') where user='root' and host='localhost';  (ÎÒÃ»ÓĞÊµÑé¹ı£¬ÍøÉÏ¶¼ÊÇÕâÃ´Ğ´µÄ)
+    å¤‡æ³¨ï¼š8.0ä¹‹å‰ç‰ˆæœ¬ï¼Œå¿˜è®°å¯†ç ä¿®æ”¹æ–¹æ³•
+        æ‰¾åˆ°binç›®å½•ï¼šmysqld --skip-grant-tables
+        é‡æ–°åœ¨å¼€ä¸€ä¸ªcmdçª—å£
+        æ‰¾åˆ°binç›®å½•ï¼šmysqlå°±è¿›å…¥ç™»é™†çŠ¶æ€äº†
+        5.7.22ä¿®æ”¹å¯†ç è¯­å¥ï¼šupdate user set authentication_string=password('123456') where user='root' and host='localhost';
+        5.6.ä¿®æ”¹å¯†ç è¯­å¥ï¼šupdate user set password=password('123456') where user='root' and host='localhost';  (æˆ‘æ²¡æœ‰å®éªŒè¿‡ï¼Œç½‘ä¸Šéƒ½æ˜¯è¿™ä¹ˆå†™çš„)
 ```
 
-### °²×°mysql-python
-  Ä¬ÈÏÊÇÃ»ÓĞ°²×°µÄ
+### å®‰è£…mysql-python
+  é»˜è®¤æ˜¯æ²¡æœ‰å®‰è£…çš„
 ```
 python -m pip install mysql-python
 ```
-  °²×°³ö´í£º"Microsoft Visual C++ 9.0 is required. Get it from http://aka.ms/vcpython27"
-  µ½Î¢ÈíµÄÍøÕ¾ÏÂÔØÈí¼ş£ºhttps://www.microsoft.com/en-us/download/confirmation.aspx?id=44266
-  °²×°VCForPython27.msi
+  å®‰è£…å‡ºé”™ï¼š"Microsoft Visual C++ 9.0 is required. Get it from http://aka.ms/vcpython27"
+  åˆ°å¾®è½¯çš„ç½‘ç«™ä¸‹è½½è½¯ä»¶ï¼šhttps://www.microsoft.com/en-us/download/confirmation.aspx?id=44266
+  å®‰è£…VCForPython27.msi
   
-  ´ËÊ±ÔËĞĞpython -m pip install mysql-pythonÃüÁî»¹ÊÇ±¨´í£¬µ½´ËÍøÕ¾ÏÂÔØ64Î»µÄmysql-python°ü£º
+  æ­¤æ—¶è¿è¡Œpython -m pip install mysql-pythonå‘½ä»¤è¿˜æ˜¯æŠ¥é”™ï¼Œåˆ°æ­¤ç½‘ç«™ä¸‹è½½64ä½çš„mysql-pythonåŒ…ï¼š
   http://www.codegood.com/archives/129
-  ÏÂÔØ£º http://www.codegood.com/download/11/MySQL-python-1.2.3.win-amd64-py2.7.exe
-  °²×°MySQL-python-1.2.3.win-amd64-py2.7.exe
+  ä¸‹è½½ï¼š http://www.codegood.com/download/11/MySQL-python-1.2.3.win-amd64-py2.7.exe
+  å®‰è£…MySQL-python-1.2.3.win-amd64-py2.7.exe
 
 
-## pycharm£¨ÆóÒµ°æ£©ĞÂ½¨django¹¤³Ì
-  >file-->new project-->django-->ÊäÈëÏîÄ¿Ãû³Æ(django_mysql)
+## pycharmï¼ˆä¼ä¸šç‰ˆï¼‰æ–°å»ºdjangoå·¥ç¨‹
+  >file-->new project-->django-->è¾“å…¥é¡¹ç›®åç§°(django_mysql)
 
 ```
 1 mkdir /test/djangotest
 2 django-admin startproject django_mysql
 ```
 
-### ¹ØÁªmysqlÊı¾İ¿â
-    ´ò¿ª/django_mysql/settings.pyÎÄ¼ş£¬ÕÒµ½DATABASESÏî£¬ Ä¬ÈÏÊÇsqlite3
-    ½«ÒıÇæ¸ÄÎªmysqlÊı¾İ¿â
+### å…³è”mysqlæ•°æ®åº“
+    æ‰“å¼€/django_mysql/settings.pyæ–‡ä»¶ï¼Œæ‰¾åˆ°DATABASESé¡¹ï¼Œ é»˜è®¤æ˜¯sqlite3
+    å°†å¼•æ“æ”¹ä¸ºmysqlæ•°æ®åº“
 ```
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'test03', #Êı¾İ¿âÃû×Ö£¬
-        'USER': 'root', #Êı¾İ¿âµÇÂ¼ÓÃ»§Ãû
-        'PASSWORD': '123456', #Êı¾İ¿âµÇÂ¼ÃÜÂë,ÎÒ×Ô¼ºĞŞ¸ÄÁË
-        'HOST': 'localhost', #Êı¾İ¿âËùÔÚÖ÷»ú£¨¹«Ë¾ÖĞĞ´ÕæÊµÖ÷»úµØÖ·£©
-        'PORT': '3306', #Êı¾İ¿â¶Ë¿Ú
+        'NAME': 'test03', #æ•°æ®åº“åå­—ï¼Œ
+        'USER': 'root', #æ•°æ®åº“ç™»å½•ç”¨æˆ·å
+        'PASSWORD': '123456', #æ•°æ®åº“ç™»å½•å¯†ç ,æˆ‘è‡ªå·±ä¿®æ”¹äº†
+        'HOST': 'localhost', #æ•°æ®åº“æ‰€åœ¨ä¸»æœºï¼ˆå…¬å¸ä¸­å†™çœŸå®ä¸»æœºåœ°å€ï¼‰
+        'PORT': '3306', #æ•°æ®åº“ç«¯å£
     }
 ```
 
-  ×¢£º settings.pyÎÄ¼ş¿ªÍ·ÒªÈ·±£utf8¸ñÊ½£º # -*- coding: utf-8 -*-
+  æ³¨ï¼š settings.pyæ–‡ä»¶å¼€å¤´è¦ç¡®ä¿utf8æ ¼å¼ï¼š # -*- coding: utf-8 -*-
 
-### ÊÖ¹¤´´½¨mysqlÊı¾İ¿â
-    ´ò¿ªĞÂÖÕ¶Ë£¬ÔÚÃüÁîĞĞµÇÂ¼mysql£¬´´½¨Êı¾İ¿âtest03¡£
+### æ‰‹å·¥åˆ›å»ºmysqlæ•°æ®åº“
+    æ‰“å¼€æ–°ç»ˆç«¯ï¼Œåœ¨å‘½ä»¤è¡Œç™»å½•mysqlï¼Œåˆ›å»ºæ•°æ®åº“test03ã€‚
  create database test03 charset=utf8;
 
 
-## ĞÂ½¨djangoµÄappÓ¦ÓÃbooktest
-  ´ò¿ªpycharmµÄterminal£¬ ½øÈë¸Ã¹¤³ÌµÄÄ¿Â¼£¬ĞÂ¼ûÒ»¸ödjango¹¤³Ì
+## æ–°å»ºdjangoçš„appåº”ç”¨booktest
+  æ‰“å¼€pycharmçš„terminalï¼Œ è¿›å…¥è¯¥å·¥ç¨‹çš„ç›®å½•ï¼Œæ–°è§ä¸€ä¸ªdjangoå·¥ç¨‹
   python manage.py startapp booktest
 
-### ĞŞ¸Äsettings.pyÎÄ¼ş£¬×¢²á¸Ã¹¤³Ì
+### ä¿®æ”¹settings.pyæ–‡ä»¶ï¼Œæ³¨å†Œè¯¥å·¥ç¨‹
 
 ```
 INSTALLED_APPS = [
@@ -139,128 +139,128 @@ INSTALLED_APPS = [
 ]
 ```
 
-DjangoµÄ¿ª·¢×ñÑ­MTVÄ£Ê½£¨models, templates, views£©£¬views.py¸ºÔğÖ´ĞĞ²Ù×÷£¬models.py¸ºÔğÊı¾İ´¦Àí£¨ÈçÊı¾İ¿âÁ¬½Ó£©£¬templatesÄ¿Â¼ÏÂ´æ·ÅÍøÒ³µÄÄ£°å
+Djangoçš„å¼€å‘éµå¾ªMTVæ¨¡å¼ï¼ˆmodels, templates, viewsï¼‰ï¼Œviews.pyè´Ÿè´£æ‰§è¡Œæ“ä½œï¼Œmodels.pyè´Ÿè´£æ•°æ®å¤„ç†ï¼ˆå¦‚æ•°æ®åº“è¿æ¥ï¼‰ï¼Œtemplatesç›®å½•ä¸‹å­˜æ”¾ç½‘é¡µçš„æ¨¡æ¿
 
 
-### ¶¨ÒåÄ£ĞÍÀà
-    Ä£ĞÍÀà±»¶¨ÒåÔÚ¡°Ó¦ÓÃ/models.py¡±ÎÄ¼şÖĞ£¬´ËÀıÖĞÎª¡°booktest/models.py¡±ÎÄ¼ş¡£
-    Ä£ĞÍÀà±ØĞë¼Ì³Ğ×ÔModelÀà£¬Î»ÓÚ°üdjango.db.modelsÖĞ¡£
-    ¶ÔÓÚÖØÒªÊı¾İÊ¹ÓÃÂß¼­É¾³ı¡£
+### å®šä¹‰æ¨¡å‹ç±»
+    æ¨¡å‹ç±»è¢«å®šä¹‰åœ¨â€œåº”ç”¨/models.pyâ€æ–‡ä»¶ä¸­ï¼Œæ­¤ä¾‹ä¸­ä¸ºâ€œbooktest/models.pyâ€æ–‡ä»¶ã€‚
+    æ¨¡å‹ç±»å¿…é¡»ç»§æ‰¿è‡ªModelç±»ï¼Œä½äºåŒ…django.db.modelsä¸­ã€‚
+    å¯¹äºé‡è¦æ•°æ®ä½¿ç”¨é€»è¾‘åˆ é™¤ã€‚
 
-#### ¾ßÌåÄ£ĞÍmodels.py´úÂë
+#### å…·ä½“æ¨¡å‹models.pyä»£ç 
 ```
-#¶¨ÒåÍ¼ÊéÄ£ĞÍÀàBookInfo
+#å®šä¹‰å›¾ä¹¦æ¨¡å‹ç±»BookInfo
 class BookInfo(models.Model):
-    #Í¼ÊéÃû³Æ£¬ Î¨Ò»
+    #å›¾ä¹¦åç§°ï¼Œ å”¯ä¸€
     btitle = models.CharField(max_length=50, unique=True)
     bpub_date = models.DateField()
     bread = models.IntegerField(default=0)
     bcomment = models.IntegerField(default=0);
     isDelete = models.BooleanField(default=False)
 
-#¶¨ÒåÓ¢ĞÛÄ£ĞÍÀàHeroInfo
+#å®šä¹‰è‹±é›„æ¨¡å‹ç±»HeroInfo
 class HeroInfo(models.Model):
-    #Ó¢ĞÛĞÕÃû£¬²»Î¨Ò»£¬¿ÉÒÔÓĞÖØÃûµÄÓ¢ĞÛ
+    #è‹±é›„å§“åï¼Œä¸å”¯ä¸€ï¼Œå¯ä»¥æœ‰é‡åçš„è‹±é›„
     hname = models.CharField(max_length=50, unique=False)
-    #Ó¢ĞÛĞÔ±ğ£¬Ä¬ÈÏFalseÊÇÄĞĞÔ£¬Ò²¿ÉÒÔÉèÖÃÎªintegerÀàĞÍ 0»òÕß1
+    #è‹±é›„æ€§åˆ«ï¼Œé»˜è®¤Falseæ˜¯ç”·æ€§ï¼Œä¹Ÿå¯ä»¥è®¾ç½®ä¸ºintegerç±»å‹ 0æˆ–è€…1
     hgender = models.BooleanField(default=False);
     isDelete = models.BooleanField(default=False);
-    #Ó¢ĞÛµÄÃèÊö
+    #è‹±é›„çš„æè¿°
     hcontent = models.CharField(max_length=500);
-    #Í¼ÊéºÍÓ¢ĞÛµÄ¹ØÏµÊÇÒ»¶Ô¶àµÄ¹ØÏµ£¬ËùÓĞÊôÓÚ¶¨ÒåÔÚÓ¢ĞÛµÄÄ£ĞÍÀàÖĞ
+    #å›¾ä¹¦å’Œè‹±é›„çš„å…³ç³»æ˜¯ä¸€å¯¹å¤šçš„å…³ç³»ï¼Œæ‰€æœ‰å±äºå®šä¹‰åœ¨è‹±é›„çš„æ¨¡å‹ç±»ä¸­
     hbook = models.ForeignKey('BookInfo');
 ```
 
-### Ç¨ÒÆ
+### è¿ç§»
 ```
 python manage.py makemigrations
 ```
-#### Ö´ĞĞÇ¨ÒÆ
+#### æ‰§è¡Œè¿ç§»
 ```
 python manage.py migrate
 ```
-#### ´ò¿ªÊı¾İ¿âÃüÁîĞĞ£¬²é¿´test03Êı¾İ¿âµÄËùÓĞ±í
-  ±íbooktest_bookinfo½á¹¹ÈçÏÂ£ºdesc booktest_bookinfo;
+#### æ‰“å¼€æ•°æ®åº“å‘½ä»¤è¡Œï¼ŒæŸ¥çœ‹test03æ•°æ®åº“çš„æ‰€æœ‰è¡¨
+  è¡¨booktest_bookinfoç»“æ„å¦‚ä¸‹ï¼šdesc booktest_bookinfo;
 
-  ±íbooktest_heroinfo½á¹¹ÈçÏÂ£ºdesc booktest_heroinfo;
+  è¡¨booktest_heroinfoç»“æ„å¦‚ä¸‹ï¼šdesc booktest_heroinfo;
 
-### ½¨Á¢²âÊÔÊı¾İ¿â
-   ÔÚÊı¾İ¿âÃüÁîĞĞÖĞ£¬¸´ÖÆÈçÏÂÓï¾äÖ´ĞĞ£¬Ïòbooktest_bookinfo±í²åÈë²âÊÔÊı¾İ£º
+### å»ºç«‹æµ‹è¯•æ•°æ®åº“
+   åœ¨æ•°æ®åº“å‘½ä»¤è¡Œä¸­ï¼Œå¤åˆ¶å¦‚ä¸‹è¯­å¥æ‰§è¡Œï¼Œå‘booktest_bookinfoè¡¨æ’å…¥æµ‹è¯•æ•°æ®ï¼š
 ```
 insert into booktest_bookinfo(btitle,bpub_date,bread,bcomment,isDelete) values
-('ÉäµñÓ¢ĞÛ´«','1980-5-1',12,34,0),
-('ÌìÁú°Ë²¿','1986-7-24',36,40,0),
-('Ğ¦°Á½­ºş','1995-12-24',20,80,0),
-('Ñ©É½·Éºü','1987-11-11',58,24,0);
+('å°„é›•è‹±é›„ä¼ ','1980-5-1',12,34,0),
+('å¤©é¾™å…«éƒ¨','1986-7-24',36,40,0),
+('ç¬‘å‚²æ±Ÿæ¹–','1995-12-24',20,80,0),
+('é›ªå±±é£ç‹','1987-11-11',58,24,0);
 
 ```
-    Ö´ĞĞÈçÏÂÓï¾ä£¬ Ïòbooktest_heroinfo±í²åÈë²âÊÔÊı¾İ£º
+    æ‰§è¡Œå¦‚ä¸‹è¯­å¥ï¼Œ å‘booktest_heroinfoè¡¨æ’å…¥æµ‹è¯•æ•°æ®ï¼š
 ```
 insert into booktest_heroinfo(hname,hgender,hbook_id,hcontent,isDelete) values
-('¹ù¾¸',1,1,'½µÁúÊ®°ËÕÆ',0),
-('»ÆÈØ',0,1,'´ò¹·¹÷·¨',0),
-('»ÆÒ©Ê¦',1,1,'µ¯Ö¸ÉñÍ¨',0),
-('Å·Ñô·æ',1,1,'¸òó¡¹¦',0),
-('Ã·³¬·ç',0,1,'¾ÅÒõ°×¹Ç×¦',0),
-('ÇÇ·å',1,2,'½µÁúÊ®°ËÕÆ',0),
-('¶ÎÓş',1,2,'ÁùÂöÉñ½£',0),
-('ĞéÖñ',1,2,'ÌìÉ½ÁùÑôÕÆ',0),
-('ÍõÓïæÌ',0,2,'ÉñÏÉ½ã½ã',0),
-('Áîºü³å',1,3,'¶À¹Â¾Å½£',0),
-('ÈÎÓ¯Ó¯',0,3,'µ¯ÇÙ',0),
-('ÔÀ²»Èº',1,3,'»ªÉ½½£·¨',0),
-('¶«·½²»°Ü',0,3,'¿û»¨±¦µä',0),
-('ºúì³',1,4,'ºú¼Òµ¶·¨',0),
-('ÃçÈôÀ¼',0,4,'»ÆÒÂ',0),
-('³ÌÁéËØ',0,4,'Ò½Êõ',0),
-('Ô¬×ÏÒÂ',0,4,'ÁùºÏÈ­',0);
+('éƒ­é–',1,1,'é™é¾™åå…«æŒ',0),
+('é»„è“‰',0,1,'æ‰“ç‹—æ£æ³•',0),
+('é»„è¯å¸ˆ',1,1,'å¼¹æŒ‡ç¥é€š',0),
+('æ¬§é˜³é”‹',1,1,'è›¤èŸ†åŠŸ',0),
+('æ¢…è¶…é£',0,1,'ä¹é˜´ç™½éª¨çˆª',0),
+('ä¹”å³°',1,2,'é™é¾™åå…«æŒ',0),
+('æ®µèª‰',1,2,'å…­è„‰ç¥å‰‘',0),
+('è™šç«¹',1,2,'å¤©å±±å…­é˜³æŒ',0),
+('ç‹è¯­å«£',0,2,'ç¥ä»™å§å§',0),
+('ä»¤ç‹å†²',1,3,'ç‹¬å­¤ä¹å‰‘',0),
+('ä»»ç›ˆç›ˆ',0,3,'å¼¹ç´',0),
+('å²³ä¸ç¾¤',1,3,'åå±±å‰‘æ³•',0),
+('ä¸œæ–¹ä¸è´¥',0,3,'è‘µèŠ±å®å…¸',0),
+('èƒ¡æ–',1,4,'èƒ¡å®¶åˆ€æ³•',0),
+('è‹—è‹¥å…°',0,4,'é»„è¡£',0),
+('ç¨‹çµç´ ',0,4,'åŒ»æœ¯',0),
+('è¢ç´«è¡£',0,4,'å…­åˆæ‹³',0);
 ```
 
-### ¶¨ÒåÊÓÍ¼
-    ´ò¿ªbooktest/views.pyÎÄ¼ş£¬¶¨ÒåÊÓÍ¼´úÂëÈçÏÂ£º
+### å®šä¹‰è§†å›¾
+    æ‰“å¼€booktest/views.pyæ–‡ä»¶ï¼Œå®šä¹‰è§†å›¾ä»£ç å¦‚ä¸‹ï¼š
 ```
 from datetime import date
 from django.shortcuts import render,redirect
 from booktest.models import BookInfo
 
-# ²éÑ¯ËùÓĞÍ¼Êé²¢ÏÔÊ¾µÄÊÓÍ¼º¯Êı
+# æŸ¥è¯¢æ‰€æœ‰å›¾ä¹¦å¹¶æ˜¾ç¤ºçš„è§†å›¾å‡½æ•°
 def index(request):
     books=BookInfo.objects.all()
     return render(request,'booktest/index.html',{'books':books})
 
-# ĞÂÔöÍ¼ÊéÊÓÍ¼ÊÓÍ¼º¯Êı
+# æ–°å¢å›¾ä¹¦è§†å›¾è§†å›¾å‡½æ•°
 def addBook(request):
     book=BookInfo()
-    book.btitle='Ïş¿É×Ô´«'
+    book.btitle='æ™“å¯è‡ªä¼ '
     book.bpub_date=date(2017,6,27)
     book.save()
     # return HttpResponse('ok') 
-    # ÖØ¶¨ÏòÌø×ªµ½Ê×Ò³
+    # é‡å®šå‘è·³è½¬åˆ°é¦–é¡µ
     return redirect('/index/')
 
-# ¸ù¾İÍ¼ÊéidÉ¾³ıÒ»±¾ÊéµÄÊÓÍ¼º¯Êı
+# æ ¹æ®å›¾ä¹¦idåˆ é™¤ä¸€æœ¬ä¹¦çš„è§†å›¾å‡½æ•°
 def delBook(request,bid):
-    # ²éÑ¯³öÍ¼Êé
+    # æŸ¥è¯¢å‡ºå›¾ä¹¦
     b=BookInfo.objects.get(id=int(bid))
     b.delete()
     return redirect('/index/')
 
 ```
 
-### ÅäÖÃurl
-   ´ò¿ªtest03/urls.pyÎÄ¼ş£¬ÅäÖÃurlÈçÏÂ£º
+### é…ç½®url
+   æ‰“å¼€test03/urls.pyæ–‡ä»¶ï¼Œé…ç½®urlå¦‚ä¸‹ï¼š
 ```
 from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    # ÅäÖÃ³É¹¦Ö®ºóÈ¥booktestµÄurlsÎÄ¼şÖĞÕÒ¶ÔÓ¦µÄÊÓÍ¼º¯Êı
+    # é…ç½®æˆåŠŸä¹‹åå»booktestçš„urlsæ–‡ä»¶ä¸­æ‰¾å¯¹åº”çš„è§†å›¾å‡½æ•°
     url(r'^',include('booktest.urls'))
 ]
 ```
 
-   ÔÚbooktestÓ¦ÓÃÏÂ´´½¨url.py, ´úÂëÈçÏÂ£º
+   åœ¨bookteståº”ç”¨ä¸‹åˆ›å»ºurl.py, ä»£ç å¦‚ä¸‹ï¼š
 ```
 from . import views
 from django.conf.urls import url
@@ -272,24 +272,24 @@ urlpatterns=[
 ]
 ```
 
-### ´´½¨Ä£°å
-   ´ò¿ªtest03/settings.py£¬ÅäÖÃÄ£°å²éÕÒÄ¿Â¼TEMPLATESµÄDIRS.
+### åˆ›å»ºæ¨¡æ¿
+   æ‰“å¼€test03/settings.pyï¼Œé…ç½®æ¨¡æ¿æŸ¥æ‰¾ç›®å½•TEMPLATESçš„DIRS.
 ```
 'DIRS': [os.path.join(BASE_DIR,'templates')],
 ```
-    ÔÚbooktestÄ¿Â¼´´½¨Ä£°åÄ¿Â¼£ºtemplates
-    ÔÚbooktest/templates/booktest/Ä¿Â¼ÏÂ½¨Á¢Ä£°åÎÄ¼şindex.html(Èç¹ûbooktestÄ¿Â¼²»´æÔÚ£¬¾Í½¨Á¢Ö®)£¬´úÂëÈçÏÂ£º
+    åœ¨booktestç›®å½•åˆ›å»ºæ¨¡æ¿ç›®å½•ï¼štemplates
+    åœ¨booktest/templates/booktest/ç›®å½•ä¸‹å»ºç«‹æ¨¡æ¿æ–‡ä»¶index.html(å¦‚æœbooktestç›®å½•ä¸å­˜åœ¨ï¼Œå°±å»ºç«‹ä¹‹)ï¼Œä»£ç å¦‚ä¸‹ï¼š
 ```
 <html>
 <head>
-    <title>Python-Ïş¿ÉµÄÍ¼ÊéÍøÕ¾</title>
+    <title>Python-æ™“å¯çš„å›¾ä¹¦ç½‘ç«™</title>
 </head>
 <body>
-<a href="/addBook/">´´½¨</a>
+<a href="/addBook/">åˆ›å»º</a>
 <ul>
 {%for book in books%}
 
-<li>{{book.btitle}}--<a href="/delBook{{book.id}}/">É¾³ı</a></li>
+<li>{{book.btitle}}--<a href="/delBook{{book.id}}/">åˆ é™¤</a></li>
 
 {%endfor%}
 </ul>
