@@ -121,7 +121,54 @@ MariaDB [(none)]>  show variables like "%character%";show variables like "%colla
 3 rows in set (0.001 sec)
 ```
 
-### 添加用户，设置权限
+## 修改配置文件mysql-clients.cnf my.cnf供参考
+
+修改配置文件/etc/my.cnf.d/mysql-clients.cnf，重点是[client]，其他的可以参考
+```
+[client]
+port        = 3307
+socket      = /var/data/db/mariadb/mysql.sock
+ 
+[mysql]
+no-auto-rehash
+ 
+[mysqldump]
+quick
+max_allowed_packet = 64M
+ 
+[myisamchk]
+key_buffer_size = 128M
+sort_buffer_size = 128M
+read_buffer = 2M
+write_buffer = 2M
+ 
+[mysqlhotcopy]
+interactive-timeout
+```
+
+修改配置文件/etc/my.cnf.d/server.cnf，这里的性能参数来自my-large.ini文件
+```
+[mysqld]
+port            = 3307
+datadir         = /var/data/db/mariadb
+socket          = /var/data/db/mariadb/mysql.sock
+skip-external-locking
+key_buffer_size = 256M
+max_allowed_packet = 64M
+table_open_cache = 256
+sort_buffer_size = 1M
+read_buffer_size = 1M
+read_rnd_buffer_size = 4M
+myisam_sort_buffer_size = 64M
+thread_cache_size = 8
+query_cache_size= 16M
+thread_concurrency = 8
+log-bin=mysql-bin
+binlog_format=mixed
+server-id   = 1
+```
+
+## 添加用户，设置权限
 
 ```
 创建用户命令
@@ -140,6 +187,3 @@ mysql>grant all privileges on *.* to username@'hostname' identified by 'password
 
 其中只授予部分权限把 其中 all privileges或者all改为select,insert,update,delete,create,drop,index,alter,grant,references,reload,shutdown,process,file其中一部分。
 ```
-
-
-## 安装最新的mariadb 10.0
